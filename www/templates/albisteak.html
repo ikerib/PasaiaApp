@@ -1,0 +1,13 @@
+<ion-view view-title="Albisteak">
+  <ion-content>
+  {{ entry.image }}
+ <ion-list>
+   <ion-item ng-repeat="entry in entries" class="item-avatar" ng-click="irekiurl(entry.link)">
+     <!-- <img ng-src="{{ entry.image }}" /> -->
+     <h2>{{ entry.title }}</h2>
+     <p>{{ entry.link }}</p>
+   </ion-item>
+ </ion-list>
+  </ion-content>
+</ion-view>
+
